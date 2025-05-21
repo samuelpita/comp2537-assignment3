@@ -310,12 +310,19 @@ class Game {
         if (numPokemons > end - start + 1) numPokemons = end - start + 1;
 
         const pokemons = [];
+        const existingIds = [];
 
         for (let i = 0; i < numPokemons; i++) {
+            let idNumber;
+
+            do {
+                idNumber = randomInt(start, end);
+            } while (!existingIds.includes(idNumber));
+
+            existingIds.push(idNumber);
+
             /** @type {Pokemon} */
-            const pokemon = await fetch(
-                "https://pokeapi.co/api/v2/pokemon/" + randomInt(start, end)
-            )
+            const pokemon = await fetch("https://pokeapi.co/api/v2/pokemon/" + idNumber)
                 .then((res) => {
                     return res.json();
                 })
