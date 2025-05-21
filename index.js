@@ -317,7 +317,7 @@ class Game {
 
             do {
                 idNumber = randomInt(start, end);
-            } while (!existingIds.includes(idNumber));
+            } while (existingIds.includes(idNumber));
 
             existingIds.push(idNumber);
 
