@@ -7,7 +7,7 @@ Self-graded Assignment 3 Checklist
 
 /2 marks
 [x]  Cards flip when clicked.
-[x]  If the user clicks on the same card twice, do nothing.
+[]  If the user clicks on the same card twice, do nothing.
 [x]  If the user clicks on a card that is already matched, do nothing.
 [x]  If the user clicks on a card while two cards are already flipped, do nothing.
 
@@ -24,6 +24,6 @@ Self-graded Assignment 3 Checklist
 [x]  The website has an appealing, professional and consistent look.
 
 Total Grade:
-56/70 (Total grade out of 70, first item is 10 marks, 2 marks each for next 4 items, 7 marks each for next 6 items and 10 marks for last item)
+54/70 (Total grade out of 70, first item is 10 marks, 2 marks each for next 4 items, 7 marks each for next 6 items and 10 marks for last item)
 
 *Note items are considered *fully* complete (marked with an x inside the box: [x]), OR incomplete (box is left empty: [ ])
