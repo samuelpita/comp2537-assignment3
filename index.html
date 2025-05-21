@@ -5,14 +5,85 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <link rel="stylesheet" href="style.css" />
-        <!-- import jQuery -->
+        <!-- <link rel="stylesheet" href="style.css" /> -->
+
+        <!-- Import jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- TailwindCSS -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
         <script src="index.js"></script>
     </head>
 
-    <body>
-        <div id="game_grid">
+    <body class="dark:bg-black dark:text-white">
+        <main class="p-4">
+            <div class="*:not-last:mb-8" id="gameSetup">
+                <div class="max-w-xl mx-auto border p-4 rounded *:not-last:mb-4">
+                    <header>
+                        <h1 class="text-4xl font-bold">Pokemon Memory Card Game</h1>
+                        <p>Samuel Pita</p>
+                    </header>
+
+                    <div>
+                        <h3 class="text-xl font-bold">Difficulty</h3>
+                        <div class="*:not-last:mr-4">
+                            <label>
+                                <span>Easy</span>
+                                <input type="radio" name="difficulty" value="0" checked />
+                            </label>
+                            <label>
+                                <span>Medium</span>
+                                <input type="radio" name="difficulty" value="1" />
+                            </label>
+                            <label>
+                                <span>Hard</span>
+                                <input type="radio" name="difficulty" value="2" />
+                            </label>
+                            <label>
+                                <span>Insane</span>
+                                <input type="radio" name="difficulty" value="3" />
+                            </label>
+                        </div>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="p-2 border rounded hover:cursor-pointer"
+                        id="startGame"
+                    >
+                        Start Game
+                    </button>
+                </div>
+
+                <div class="max-w-xl mx-auto border p-4 rounded *:not-last:mb-4">
+                    <h3 class="text-xl font-bold">History</h3>
+                    <div class="*:not-last:mb-4" id="gameLogs">
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-2xl mx-auto *:not-last:mb-4" id="game">
+                <div class="*:not-last:mr-4">
+                    <span class="text-xl text-center font-bold inline" id="timer"></span>
+                    <span class="text-center inline" id="details"></span>
+                    <button
+                        type="button"
+                        class="p-2 border rounded hover:cursor-pointer"
+                        id="endGame"
+                    >
+                        End Game
+                    </button>
+                </div>
+
+                <div class="" id="gameGrid">
+                    <!-- Cards -->
+                </div>
+            </div>
+        </main>
+
+        <!-- <div id="game_grid">
             <div class="card">
                 <img id="img1" class="front_face" src="001.png" alt="" />
                 <img class="back_face" src="back.webp" alt="" />
@@ -37,6 +108,6 @@
                 <img id="img6" class="front_face" src="003.png" alt="" />
                 <img class="back_face" src="back.webp" alt="" />
             </div>
-        </div>
+        </div> -->
     </body>
 </html>

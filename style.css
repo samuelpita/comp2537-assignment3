@@ -2,17 +2,7 @@ body {
     margin: 0px;
 }
 
-#game_grid {
-    border: 2px tomato solid;
-    width: 600px;
-    height: 400px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .card {
-    width: 33.3%;
     position: relative;
     transition: transform 1s;
     perspective: 1000px;
