@@ -16,13 +16,14 @@ Self-graded Assignment 3 Checklist
 [x]  Header is showing the number of clicks the user has made, and the number of pairs left, number of pairs matched, total number of pairs, and game timer.
 [x]  Start and Reset buttons are added to the game.
 [x]  Difficulty levels are added to the game.
-[x]  Themes are added to the game.
+[]  Themes are added to the game.
+    -- There's no theme selection, however, it supports dark mode when enabled by the browser
 []  Power-up logic is added to the game.
 
 /10 marks
 [x]  The website has an appealing, professional and consistent look.
 
 Total Grade:
-63/70 (Total grade out of 70, first item is 10 marks, 2 marks each for next 4 items, 7 marks each for next 6 items and 10 marks for last item)
+56/70 (Total grade out of 70, first item is 10 marks, 2 marks each for next 4 items, 7 marks each for next 6 items and 10 marks for last item)
 
 *Note items are considered *fully* complete (marked with an x inside the box: [x]), OR incomplete (box is left empty: [ ])
